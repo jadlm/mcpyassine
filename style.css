@@ -604,7 +604,12 @@ body {
     }
 }
 
-.logo img {
-    position: relative;
-    right: 110px;
+@media (max-width: 768px) {
+    .logo img {
+        position: relative;
+        right: 0;
+        max-width: 120px;
+        height: auto;
+    }
 }
+
