@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATELIER DESIGN - Cabinet d'Architecture</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Cabinet d'architecture moderne spécialisé dans la conception, rénovation et suivi de projets architecturaux élégants et durables.">
+   
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <img class="imglogo" src="images/logoversion2.png" alt="Atelier Design Logo" style="height: 65px; vertical-align: middle;">
+              
+              </a>
+              
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link" onclick="showSection('home')">Accueil</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" onclick="showSection('services')">Services</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" onclick="showSection('projects')">Réalisations</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" onclick="showSection('about')">À propos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+            <span class="lang-switch">FR | EN</span>
+            <a href="#" class="cta-button" onclick="showSection('contact')">Demander un devis</a>
+            <button class="mobile-menu-btn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section id="home" class="page-section active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Concevoir vos espaces de vie</h1>
+                    <p>avec élégance et précision</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="cta-button" onclick="showSection('projects')">Voir nos projets</a>
+                        <a href="#" class="btn-secondary" onclick="showSection('contact')">Nous contacter</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Preview -->
+            <section class="about-section">
+                <div class="container">
+                    <h2 class="section-title fade-in">Notre Cabinet</h2>
+                    <div class="about-content fade-in">
+                        <div class="about-text">
+                            <h3>Excellence architecturale depuis 15 ans</h3>
+                            <p>Atelier Design est un cabinet d'architecture moderne spécialisé dans la création d'espaces uniques et fonctionnels. Notre approche allie créativité, durabilité et respect de l'environnement.</p>
+                            <p>Nous accompagnons nos clients de la conception jusqu'à la réalisation, en garantissant un suivi personnalisé et une expertise technique de haut niveau.</p>
+                            <a href="#" class="cta-button" onclick="showSection('about')">En savoir plus</a>
+                        </div>
+                        <div class="about-image" style="background-image: url('images/Orange\ White\ Modern\ Construction\ Presentation.png'); background-size: cover; background-position: center; height: 300px;"></div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Services Preview -->
+            <section class="services-section">
+                <div class="container">
+                    <h2 class="section-title fade-in">Nos Services</h2>
+                    <div class="services-grid fade-in">
+                        <div class="service-card">
+                            <div class="service-icon">🏗️</div>
+                            <h3>Conception</h3>
+                            <p>Création de plans architecturaux sur mesure adaptés à vos besoins et contraintes.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">🔨</div>
+                            <h3>Rénovation</h3>
+                            <p>Transformation et modernisation de vos espaces existants avec expertise.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon">👥</div>
+                            <h3>Suivi de chantier</h3>
+                            <p>Accompagnement complet de votre projet de la conception à la livraison.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="testimonials-section">
+                <div class="container">
+                    <h2 class="section-title fade-in">Témoignages Clients</h2>
+                    <div class="testimonials-grid fade-in">
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Un travail exceptionnel ! L'équipe d'Atelier Design a su transformer notre vision en réalité. Professionnalisme et créativité au rendez-vous."</p>
+                            <p class="testimonial-author">- Marie Dubois, Villa contemporaine</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Projet de rénovation mené avec brio. Respect des délais, qualité irréprochable et conseil personnalisé. Je recommande vivement."</p>
+                            <p class="testimonial-author">- Jean Martin, Rénovation appartement</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="testimonial-text">"Architecture moderne et fonctionnelle. L'équipe a su optimiser chaque espace de notre bureaux avec élégance."</p>
+                            <p class="testimonial-author">- Sophie Legrand, Aménagement bureau</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Services Page -->
+        <section id="services" class="page-section">
+            <div class="container">
+                <h1 class="section-title">Nos Services</h1>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">🏛️</div>
+                        <h3>Conception architecturale</h3>
+                        <p>Création de projets architecturaux personnalisés, de l'esquisse aux plans d'exécution. Nous concevons des espaces uniques qui reflètent votre personnalité.</p>
+                        <a href="#" class="cta-button" onclick="showSection('contact')">Demander ce service</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">📋</div>
+                        <h3>Permis de construire</h3>
+                        <p>Accompagnement complet dans les démarches administratives. Constitution des dossiers et suivi jusqu'à l'obtention de votre permis.</p>
+                        <a href="#" class="cta-button" onclick="showSection('contact')">Demander ce service</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">👷</div>
+                        <h3>Suivi de chantier</h3>
+                        <p>Direction et coordination des travaux. Contrôle qualité, respect des délais et budget. Votre projet entre de bonnes mains.</p>
+                        <a href="#" class="cta-button" onclick="showSection('contact')">Demander ce service</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🏠</div>
+                        <h3>Architecture d'intérieur</h3>
+                        <p>Aménagement et décoration d'espaces intérieurs. Optimisation de l'ergonomie et création d'ambiances sur mesure.</p>
+                        <a href="#" class="cta-button" onclick="showSection('contact')">Demander ce service</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Rénovation</h3>
+                        <p>Transformation et modernisation de bâtiments existants. Mise aux normes, amélioration énergétique et restructuration.</p>
+                        <a href="#" class="cta-button" onclick="showSection('contact')">Demander ce service</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌆</div>
+                        <h3>Urbanisme</h3>
+                        <p>Conseil en aménagement urbain et territorial. Études de faisabilité et intégration harmonieuse dans l'environnement.</p>
+                        <a href="#" class="cta-button" onclick="showSection('contact')">Demander ce service</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">🌱</div>
+                        <h3>Architecture écologique</h3>
+                        <p>Conception durable et respectueuse de l'environnement. Bâtiments basse consommation et matériaux écologiques.</p>
+                        <a href="#" class="cta-button" onclick="showSection('contact')">Demander ce service</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">💡</div>
+                        <h3>Conseil et expertise</h3>
+                        <p>Audit technique, diagnostic immobilier et conseil stratégique. Expertise reconnue pour vos projets immobiliers.</p>
+                        <a href="#" class="cta-button" onclick="showSection('contact')">Demander ce service</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Page -->
+        <section id="projects" class="page-section">
+            <div class="container">
+                <h1 class="section-title">Nos Réalisations</h1>
+                <div class="project-filters">
+                    <button class="filter-btn active" onclick="filterProjects('all')">Tous</button>
+                    <button class="filter-btn" onclick="filterProjects('maisons')">Maisons</button>
+                    <button class="filter-btn" onclick="filterProjects('villas')">Villas</button>
+                    <button class="filter-btn" onclick="filterProjects('bureaux')">Bureaux</button>
+                    <button class="filter-btn" onclick="filterProjects('renovations')">Rénovations</button>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <div class="project-card" data-category="villas">
+                        <div class="project-image" style="background-image: url('images/villa1.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 8px;"></div>
+
+                        <div class="project-info">
+                            <h3>Villa Moderne Côte d'Azur</h3>
+                            <p class="project-meta">Nice • 2023 • Villa</p>
+                            <p>Villa contemporaine de 250m² avec piscine à débordement et vue mer panoramique. Architecture épurée et matériaux nobles.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="maisons">
+                        <div class="project-image" style="background-image: url('images/maison1.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 8px;"></div>
+
+                        <div class="project-info">
+                            <h3>Maison Passive Bordeaux</h3>
+                            <p class="project-meta">Bordeaux • 2023 • Maison</p>
+                            <p>Maison bioclimatique de 180m² aux performances énergétiques exceptionnelles. Construction bois et isolation renforcée.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="bureaux">
+                        <div class="project-image" style="background-image: url('images/bureau1.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 8px;"></div>
+
+                        <div class="project-info">
+                            <h3>Siège Social Start-up</h3>
+                            <p class="project-meta">Lyon • 2022 • Bureau</p>
+                            <p>Aménagement de 500m² d'espaces de travail collaboratifs. Design moderne et espaces modulables pour une jeune entreprise tech.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="renovations">
+                        <div class="project-image" style="background-image: url('images/appart.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 8px;"></div>
+
+                        <div class="project-info">
+                            <h3>Rénovation Appartement Haussmannien</h3>
+                            <p class="project-meta">Paris • 2022 • Rénovation</p>
+                            <p>Transformation complète d'un 120m² parisien. Alliance parfaite entre charme ancien et confort moderne.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="villas">
+                        <div class="project-image" style="background-image: url('images/villa2.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 8px;"></div>
+
+                        <div class="project-info">
+                            <h3>Villa d'Architecte Provence</h3>
+                            <p class="project-meta">Aix-en-Provence • 2021 • Villa</p>
+                            <p>Villa contemporaine intégrée dans le paysage provençal. Terrasses étagées et jeu de volumes pour une architecture respectueuse du site.</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="maisons">
+                        <div class="project-image" style="background-image: url('images/maison2.jpg'); background-size: cover; background-position: center; height: 300px; border-radius: 8px;"></div>
+
+                        <div class="project-info">
+                            <h3>Maison Familiale Nantes</h3>
+                            <p class="project-meta">Nantes • 2021 • Maison</p>
+                            <p>Maison familiale de 200m² avec jardin paysager. Architecture traditionnelle revisitée avec des matériaux contemporains.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page-section">
+            <div class="container">
+                <h1 class="section-title">À Propos</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>L'Architecture comme Art de Vivre</h2>
+                        <p>Fondé en 2008 par <strong>Alexandre Moreau</strong>, Atelier Design est né d'une passion pour l'architecture contemporaine et durable. Diplômé de l'École Nationale Supérieure d'Architecture de Paris-Belleville, Alexandre a développé une approche unique alliant innovation technique et respect de l'environnement.</p>
+                        
+                        <h3>Notre Vision</h3>
+                        <p>Nous croyons que l'architecture doit créer des espaces qui améliorent la qualité de vie de leurs occupants tout en respectant l'environnement. Chaque projet est une opportunité de repenser l'habitat moderne avec créativité et responsabilité.</p>
+                        
+                        <h3>Nos Valeurs</h3>
+                        <ul style="list-style: none; padding-left: 0;">
+                            <li style="margin: 1rem 0; padding-left: 2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--accent-color);">▸</span>
+                                <strong>Excellence :</strong> Qualité irréprochable dans chaque réalisation
+                            </li>
+                            <li style="margin: 1rem 0; padding-left: 2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--accent-color);">▸</span>
+                                <strong>Durabilité :</strong> Architecture respectueuse de l'environnement
+                            </li>
+                            <li style="margin: 1rem 0; padding-left: 2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--accent-color);">▸</span>
+                                <strong>Innovation :</strong> Intégration des dernières technologies
+                            </li>
+                            <li style="margin: 1rem 0; padding-left: 2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--accent-color);">▸</span>
+                                <strong>Écoute :</strong> Accompagnement personnalisé de nos clients
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about-image" style="background-image: url('images/maison1.jpg');"></div>
+
+                </div>
+
+                <!-- Team Section -->
+                <div style="margin-top: 4rem;">
+                    <h2 class="section-title">Notre Équipe</h2>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon" style="background: var(--accent-green);">👨‍💼</div>
+                            <h3>Alexandre Moreau</h3>
+                            <p><strong>Architecte DPLG - Fondateur</strong></p>
+                            <p>15 ans d'expérience en architecture résidentielle et tertiaire. Spécialiste en construction durable et passive.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon" style="background: var(--accent-green);">👩‍💼</div>
+                            <h3>Sarah Lemoine</h3>
+                            <p><strong>Architecte d'intérieur</strong></p>
+                            <p>Créatrice d'ambiances uniques, experte en aménagement d'espaces et en décoration contemporaine.</p>
+                        </div>
+                        <div class="service-card">
+                            <div class="service-icon" style="background: var(--accent-green);">👨‍💻</div>
+                            <h3>Thomas Dubois</h3>
+                            <p><strong>Ingénieur BIM</strong></p>
+                            <p>Spécialiste en modélisation 3D et coordination technique. Garant de la précision de nos projets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h1 class="section-title">Contactez-nous</h1>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">Demander un devis</h2>
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Type de projet *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Sélectionnez un service</option>
+                                    <option value="conception">Conception architecturale</option>
+                                    <option value="renovation">Rénovation</option>
+                                    <option value="interieur">Architecture d'intérieur</option>
+                                    <option value="permis">Permis de construire</option>
+                                    <option value="suivi">Suivi de chantier</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Budget estimé</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Sélectionnez votre budget</option>
+                                    <option value="moins-50k">Moins de 50 000€</option>
+                                    <option value="50k-100k">50 000€ - 100 000€</option>
+                                    <option value="100k-200k">100 000€ - 200 000€</option>
+                                    <option value="200k-500k">200 000€ - 500 000€</option>
+                                    <option value="plus-500k">Plus de 500 000€</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Description du projet *</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet, vos besoins et vos contraintes..." required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>
+                                    <input type="checkbox" required style="margin-right: 0.5rem;">
+                                    J'accepte d'être contacté concernant ma demande *
+                                </label>
+                            </div>
+                            <button type="submit" class="cta-button" style="width: 100%;">
+                                📱 Envoyer via WhatsApp
+                            </button>
+                            <p style="font-size: 0.9rem; color: #666; text-align: center; margin-top: 0.5rem;">
+                                Votre demande sera envoyée directement sur notre WhatsApp professionnel
+                            </p>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <h2 style="margin-bottom: 1.5rem; color: var(--primary-color);">Informations de contact</h2>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Adresse</h4>
+                                <p> Ang Bd 11 Janvier & Mustapha El Maanio N° 105 RES Prima Office Etg 3 o Apt 16 o 24000<br>casablanca, Maroc</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+212621924487</p>
+                                <a href="https://wa.me/33478901234" target="_blank" style="color: var(--accent-color); text-decoration: none;">
+                                    💬 Démarrer une conversation
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>mcpitalie@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🕒</div>
+                            <div>
+                                <h4>Horaires</h4>
+                                <p>Lun - Ven: 9h00 - 18h00<br>Sam: 9h00 - 12h00</p>
+                            </div>
+                        </div>
+                        
+                     
+                        
+                        <div style="background: linear-gradient(135deg, #25D366, #128C7E); color: white; padding: 1.5rem; border-radius: 10px; margin-top: 2rem;">
+                            <h4 style="margin-bottom: 1rem; display: flex; align-items: center;">
+                                📱 Contact WhatsApp Instantané
+                            </h4>
+                            <p style="margin-bottom: 1rem; opacity: 0.9;">
+                                Besoin d'une réponse rapide ? Contactez-nous directement sur WhatsApp !
+                            </p>
+                            <a href="https://wa.me/33478901234?text=Bonjour%20Atelier%20Design,%20j'aimerais%20discuter%20d'un%20projet%20architectural." 
+                               target="_blank" 
+                               style="background: white; color: #25D366; padding: 0.8rem 1.5rem; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block; transition: var(--transition);">
+                                💬 Ouvrir WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Atelier Design</h3>
+                    <p>Cabinet d'architecture moderne spécialisé dans la conception durable et l'innovation architecturale.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#" onclick="showSection('services')">Conception architecturale</a></li>
+                        <li><a href="#" onclick="showSection('services')">Rénovation</a></li>
+                        <li><a href="#" onclick="showSection('services')">Architecture d'intérieur</a></li>
+                        <li><a href="#" onclick="showSection('services')">Suivi de chantier</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liens utiles</h3>
+                    <ul>
+                        <li><a href="#" onclick="showSection('projects')">Nos réalisations</a></li>
+                        <li><a href="#" onclick="showSection('about')">À propos</a></li>
+                        <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 Ang Bd 11 Janvier & Mustapha El Maanio N° 105 RES Prima Office Etg 3 o Apt 16 o 24000<br>casablanca , Maroc</p>
+                    <p>📞 +212661265474</p>
+                    <p>✉️ mcpitalie@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Atelier Design. Tous droits réservés. | 
+                   <a href="#" style="color: #ccc;">Mentions légales</a> | 
+                   <a href="#" style="color: #ccc;">Politique de confidentialité</a> | 
+                   <a href="#" style="color: #ccc;">CGV</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Page Navigation
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Update active nav link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.style.color = 'var(--text-color)';
+            });
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        // Project Filtering
+        function filterProjects(category) {
+            const projects = document.querySelectorAll('.project-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter projects
+            projects.forEach(project => {
+                if (category === 'all' || project.dataset.category === category) {
+                    project.style.display = 'block';
+                    project.style.animation = 'fadeInUp 0.5s ease-out';
+                } else {
+                    project.style.display = 'none';
+                }
+            });
+        }
+
+        // Scroll Animations
+        function observeElements() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Form Handling with WhatsApp Integration
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Format message for WhatsApp
+            let message = `🏛️ *NOUVELLE DEMANDE DE DEVIS - ATELIER DESIGN*\n\n`;
+            message += `👤 *Client:* ${data.name}\n`;
+            message += `📧 *Email:* ${data.email}\n`;
+            if (data.phone) {
+                message += `📞 *Téléphone:* ${data.phone}\n`;
+            }
+            message += `🏗️ *Type de projet:* ${data.service}\n`;
+            if (data.budget) {
+                message += `💰 *Budget estimé:* ${data.budget}\n`;
+            }
+            message += `\n📝 *Description du projet:*\n${data.message}\n\n`;
+            message += `⏰ *Date de demande:* ${new Date().toLocaleDateString('fr-FR')} à ${new Date().toLocaleTimeString('fr-FR')}\n`;
+            message += `\n✅ Le client accepte d'être contacté pour ce projet.`;
+            
+            // WhatsApp phone number (replace with actual number)
+            const whatsappNumber = "33478901234"; // Format: country code + number without +
+            
+            // Create WhatsApp URL
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+            
+            // Open WhatsApp
+            window.open(whatsappURL, '_blank');
+            
+            // Show confirmation message
+            alert('Merci pour votre demande ! Vous allez être redirigé vers WhatsApp pour finaliser l\'envoi.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const navMenu = document.querySelector('.nav-menu');
+            if (navMenu.style.display === 'flex') {
+                navMenu.style.display = 'none';
+            } else {
+                navMenu.style.display = 'flex';
+                navMenu.style.flexDirection = 'column';
+                navMenu.style.position = 'absolute';
+                navMenu.style.top = '100%';
+                navMenu.style.left = '0';
+                navMenu.style.width = '100%';
+                navMenu.style.background = 'white';
+                navMenu.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+                navMenu.style.padding = '1rem';
+            }
+        });
+
+        // Language Switch (placeholder)
+        document.querySelector('.lang-switch').addEventListener('click', function() {
+            const currentLang = this.textContent.includes('FR') ? 'FR' : 'EN';
+            if (currentLang === 'FR') {
+                // Switch to English (placeholder)
+                alert('English version coming soon!');
+            } else {
+                // Switch to French
+                this.textContent = 'FR | EN';
+            }
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            observeElements();
+            
+            // Add smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+
+        // SEO and Performance optimizations
+        // Lazy loading for images (if implemented)
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
