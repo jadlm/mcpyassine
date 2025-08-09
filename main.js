@@ -189,16 +189,16 @@
         
             // Plein écran sur clic vidéo
             const video = document.getElementById('video-background');
-            if (video) {
-                video.addEventListener('click', () => {
-                    if (video.requestFullscreen) {
-                        video.requestFullscreen();
-                    } else if (video.webkitRequestFullscreen) { // Safari
-                        video.webkitRequestFullscreen();
-                    } else if (video.msRequestFullscreen) { // IE11
-                        video.msRequestFullscreen();
-                    }
-                });
-            }
-        });
+            const btn = document.getElementById('fullscreen-btn');
             
+            btn.addEventListener('click', () => {
+                if (video.requestFullscreen) {
+                    video.requestFullscreen();
+                } else if (video.webkitRequestFullscreen) {
+                    video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) {
+                    video.msRequestFullscreen();
+                }
+            });
+        }
+        );            
