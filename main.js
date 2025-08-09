@@ -121,6 +121,7 @@
                 navMenu.style.flexDirection = 'column';
                 navMenu.style.position = 'absolute';
                 navMenu.style.top = '100%';
+                navMenu.style.gap = '20px';
                 navMenu.style.left = '0';
                 navMenu.style.width = '100%';
                 navMenu.style.background = 'white';
@@ -189,16 +190,20 @@
         
             // Plein écran sur clic vidéo
             const video = document.getElementById('video-background');
-            const btn = document.getElementById('fullscreen-btn');
-            
-            btn.addEventListener('click', () => {
+            if (video) {
+              video.addEventListener('click', () => {
                 if (video.requestFullscreen) {
-                    video.requestFullscreen();
-                } else if (video.webkitRequestFullscreen) {
-                    video.webkitRequestFullscreen();
-                } else if (video.msRequestFullscreen) {
-                    video.msRequestFullscreen();
+                  video.requestFullscreen().catch(err => {
+                    console.error(`Erreur fullscreen: ${err.message}`);
+                  });
+                } else if (video.webkitRequestFullscreen) { // Safari
+                  video.webkitRequestFullscreen();
+                } else if (video.msRequestFullscreen) { // IE11
+                  video.msRequestFullscreen();
+                } else {
+                  console.log('Fullscreen non supporté');
                 }
-            });
-        }
-        );            
+              });
+            }
+        });
+            
